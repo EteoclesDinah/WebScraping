@@ -4,7 +4,6 @@ import './App.css';
 const Home = () => {
     const [url, setUrl] = useState("");
     const [urls, setUrls] = useState([]);
-    const [results, setResults] = useState([]);
 
     const handleAddUrl = () => {
         if (url.trim()) {
@@ -19,19 +18,7 @@ const Home = () => {
     };
 
     const handleSearch = async () => {
-        try {
-            const response = await fetch('http://127.0.0.1:5000/scrape', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({ urls }),
-            });
-            const data = await response.json();
-            setResults(data);
-        } catch (error) {
-            console.error('Error:', error);
-        }
+       
     };
 
     return (
@@ -73,29 +60,7 @@ const Home = () => {
 
                 <button className="searchButton" onClick={handleSearch}>Search</button>
 
-                {results.length > 0 && (
-                    <div className="results">
-                        <h2>Scraped Content:</h2>
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Index</th>
-                                    <th>Title</th>
-                                    <th>Value</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                {results.map((result, index) => (
-                                    <tr key={index}>
-                                        <td>{result.index}</td>
-                                        <td>{result.title}</td>
-                                        <td>{result.value}</td>
-                                    </tr>
-                                ))}
-                            </tbody>
-                        </table>
-                    </div>
-                )}
+                
             </div>
         </div>
     );
