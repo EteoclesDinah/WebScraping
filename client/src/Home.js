@@ -18,8 +18,33 @@ const Home = () => {
     };
 
     const handleSearch = async () => {
-       
+        if (urls.length === 0) {
+            alert("Please add at least one URL.");
+            return;
+        }
+    
+        try {
+            const response = await fetch("http://localhost:5000/scrape", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({ urls }),
+            });
+    
+            const data = await response.json();
+    
+            if (response.ok) {
+                alert("Scraping started successfully");
+            } else {
+                alert(`Error: ${data.error}`);
+            }
+        } catch (error) {
+            alert("Error connecting to the server.");
+            console.error(error);
+        }
     };
+    
 
     return (
         <div className="container">
