@@ -1,0 +1,162 @@
+/*.appContainer {
+  background-color: rgb(150, 143, 143);
+  display: flex;
+  height: 100vh;
+  text-decoration: none;
+}
+*/
+/*Navbar*/
+
+.nav-bar{
+  background-color: rgb(215, 235, 250);
+  padding: 0.45cm 1cm;
+  max-width: fit-content;
+  border-radius: 0.8rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.nav-bar ul li {
+  text-decoration: none;
+  list-style: none;
+  display:inline;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-weight: bolder;
+  font-size: 25px;
+  color: rgb(24, 0, 0);
+  padding: 1cm;
+}
+
+.nav-bar ul li:hover{
+  background-color: rgb(114, 180, 246);
+  border-radius: 0.8rem;
+  color: rgb(255, 255, 255);
+}
+
+.nav-bar ul li .active {
+  border-bottom: 2px solid red;
+  color: red;
+
+}
+
+.container {
+  background: linear-gradient(to right, #97029e, #dc8b4d);
+  color: rgb(255, 255, 255);
+  margin-top: 3vh;
+  display: flex;
+  height: 100vh;
+  margin: 10px;
+  border-radius: 0.8rem;
+}
+
+.homeDescription{
+  margin-left: 25px;
+  margin-top: 100px;
+  font-family: 'Times New Roman', Times, serif;
+  
+}
+
+.homeDescription h1{
+  color: black;
+  font-size: 40px;
+  font-family:serif;
+  word-spacing: 3px;
+}
+
+.homeDescription p:nth-of-type(1) {
+  font-size: 25px;
+  color: rgb(172, 172, 251);
+}
+
+.homeDescription p:nth-of-type(2) {
+  font-size: 30px;
+  color: rgb(107, 107, 248);
+}
+.homeDescription p:nth-of-type(3) {
+  font-size: 22px;
+  word-spacing: 2.5px;
+}
+
+.scrappingContent {
+  box-shadow: 0 .5rem 1.5rem rgba(0,0,0,1);
+  width: 55%;
+  max-width: 800;
+  margin-top: 50px;
+  margin-left: 50px;
+  border-radius: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  overflow-wrap: break-word;  /* Allow URLs to break to the next line */
+  word-wrap: break-word;      /* Support for older browsers */
+}
+
+.scrappingContent input {
+  padding: 1rem;
+  margin: 5px;
+  border-radius: 0.8rem;
+  
+}
+
+.addButton {
+  padding: 10px 30px;
+  max-width: fit-content;
+  border-radius: 0.8rem;
+  background-color: #7c0c84;
+  outline: none;
+  cursor: pointer;
+  color: white;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.addButton:hover {
+  background-color: rgb(114, 180, 246);
+}
+
+.scrappingContent urlList {
+  margin-top: 20px;
+  width: 100%s;
+}
+
+.urlList ul{
+  list-style-type:square;
+  margin-right: 10px; 
+  max-width: 100%;  
+}
+
+.urlList li{
+  margin-top: 5px;  /* Add some space between URLs */
+  word-wrap: break-word;  /* Make sure long URLs wrap */
+  overflow-wrap: break-word;  /* Support for modern browsers */
+}
+
+.removeButton {
+  margin-left: 10px;
+  padding: 5px 10px;
+  border-radius: 0.4rem;
+  background-color: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.removeButton:hover {
+  background-color: darkred;
+}
+
+.searchButton {
+  padding: 10px 30px;
+  max-width: fit-content;
+  border-radius: 0.8rem;
+  background-color: #7c0c84;
+  outline: none;
+  cursor: pointer;
+  color: white;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.searchButton:hover {
+  background-color: rgb(114, 180, 246);
+}
