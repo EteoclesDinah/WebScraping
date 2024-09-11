@@ -4,6 +4,7 @@ import './App.css';
 const Home = () => {
     const [url, setUrl] = useState("");
     const [urls, setUrls] = useState([]);
+    const [scrapingStatus, setScrapingStatus] = useState("");
 
     const handleAddUrl = () => {
         if (url.trim()) {
@@ -22,6 +23,8 @@ const Home = () => {
             alert("Please add at least one URL.");
             return;
         }
+
+        setScrapingStatus("Scraping in progress...");
     
         try {
             const response = await fetch("http://localhost:5000/scrape", {
@@ -35,16 +38,15 @@ const Home = () => {
             const data = await response.json();
     
             if (response.ok) {
-                alert("Scraping started successfully");
+                setScrapingStatus("Scraping completed. Check output.csv for results.");
             } else {
-                alert(`Error: ${data.error}`);
+                setScrapingStatus(`Error: ${data.error}`);
             }
         } catch (error) {
-            alert("Error connecting to the server.");
+            setScrapingStatus("Error connecting to the server.");
             console.error(error);
         }
     };
-    
 
     return (
         <div className="container">
@@ -52,8 +54,6 @@ const Home = () => {
                 <h1>Your Go-To Web Scraping Tool!!</h1>
                 <p>Want to extract web content seamlessly?</p>
                 <p>Look no further!</p>
-                <p>Harness the power of web scraping to collect data efficiently.<br /> Whether you're gathering information for research,<br />
-                    monitoring trends, or compiling useful resources, <br />our tool simplifies the process for you.</p>
             </div>
 
             <div className="scrappingContent">
@@ -85,7 +85,7 @@ const Home = () => {
 
                 <button className="searchButton" onClick={handleSearch}>Search</button>
 
-                
+                <p>{scrapingStatus}</p>  {/* Display scraping status */}
             </div>
         </div>
     );
