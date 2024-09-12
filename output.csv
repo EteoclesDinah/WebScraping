@@ -1,19 +1,19 @@
 Index,Title,Value
 1.1.1,Title,Selenium
 1.2.1,Title,Selenium
-1.3.1,Title,"Selenium: Benefits, Uses, Side Effects, Dosage, and More"
-1.4.1,Title,Selenium with Python — Selenium Python Bindings 2 ...
+1.3.1,Title,Selenium with Python — Selenium Python Bindings 2 ...
+1.4.1,Title,"Selenium: Benefits, Uses, Side Effects, Dosage, and More"
 1.5.1,Title,Selenium Testing: Detailed Guide
 1.6.1,Title,SeleniumHQ/selenium: A browser automation framework ...
 1.1.2,Link,https://www.selenium.dev/
 1.2.2,Link,https://en.wikipedia.org/wiki/Selenium
-1.3.2,Link,https://www.webmd.com/a-to-z-guides/supplement-guide-selenium
-1.4.2,Link,https://selenium-python.readthedocs.io/
+1.3.2,Link,https://selenium-python.readthedocs.io/
+1.4.2,Link,https://www.webmd.com/a-to-z-guides/supplement-guide-selenium
 1.5.2,Link,https://www.browserstack.com/selenium
 1.6.2,Link,https://github.com/SeleniumHQ/selenium
 1.1.3,Content,Selenium automates browsers. That's it! What you do with that power is entirely up to you. Primarily it is for automating web applications for testing purposes.
 1.2.3,Content,"Selenium is a chemical element; it has the symbol Se and atomic number 34. It has various physical appearances, including a brick-red powder, ..."
-1.3.3,Content,"२०२३ अगस्ट २१ — Selenium has antioxidant properties and may help protect cells from damage. Most people get enough of this essential mineral from foods, ..."
-1.4.3,Content,Selenium with Python¶ · 1. Installation · 1.1. Introduction · 1.2. Installing Python bindings for Selenium · 1.3. Instructions for Windows users · 1.4. · 2.
+1.3.3,Content,Selenium with Python¶ · 1. Installation · 1.1. Introduction · 1.2. Installing Python bindings for Selenium · 1.3. Instructions for Windows users · 1.4. · 2.
+1.4.3,Content,"२०२३ अगस्ट २१ — Selenium has antioxidant properties and may help protect cells from damage. Most people get enough of this essential mineral from foods, ..."
 1.5.3,Content,Selenium allows developers and testers to automate the testing of web applications across different browsers and platforms. Language Support: Selenium allows ...
 1.6.3,Content,Selenium is an umbrella project encapsulating a variety of tools and libraries enabling web browser automation. Selenium specifically provides an ...

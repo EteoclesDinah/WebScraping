@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import './App.css';
 
 const Home = () => {
+    
     const [url, setUrl] = useState("");
     const [urls, setUrls] = useState([]);
     const [scrapingStatus, setScrapingStatus] = useState("");
